@@ -1,0 +1,39 @@
+*{
+	box-sizing: border-box;
+}
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+[class*="col-"] {
+  float: left;
+  padding: 15px;
+}
+
+html {
+  font-family: "Lucida Sans", sans-serif;
+}
+.header {
+  background-color: #9933cc;
+  color: #ffffff;
+  padding: 15px;
+}
+.footer {
+  background-color: #0099cc;
+  color: #ffffff;
+  text-align: center;
+  font-size: 12px;
+  padding: 15px;
+}
+[class*="col-"] {
+  width: 100%;
+}
+@media only screen and (min-width: 768px){
+	.col-1 {width: 25%;}
+	.col-2 {width: 50%;}
+}
+@media only screen and (min-width: 600px) {
+	.col-s-1 {width: 25%;}
+	.col-s-2 {width: 50%;}
+}
